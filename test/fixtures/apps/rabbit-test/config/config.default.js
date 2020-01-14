@@ -21,13 +21,13 @@ exports.rabbit = {
 
   // only client rabbit config
   client: {
-    url: 'amqp://admin:123456@192.168.217.128:5672',
+    url: 'amqp://rabbit:password@0.0.0.0:10060',
     rabbit: {
       protocol: 'amqp',
-      hostname: '192.168.217.128',
-      port: 5672,
-      username: 'admin',
-      password: '123456',
+      hostname: '0.0.0.0',
+      port: 10060,
+      username: 'rabbit',
+      password: 'password',
       locale: 'en_US',
       frameMax: 0,
       heartbeat: 0,
